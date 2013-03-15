@@ -1,0 +1,34 @@
+<html xmlns='http://www.w3.org/1999/xhtml' xml:lang='it' lang='it'>
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>A35G Password Generator</title>
+  <link rel="stylesheet" href="./css/style.css" />
+  <script src="./script/jquery.js"></script>
+  <script src="./script/core.js"></script>
+</head>
+<body>
+  <div id='appname'>A35G Password Generator</div>
+  <div id='contenitore'>
+    <div id='box_text'></div>
+    <div id='options'>
+      <div class='opt'>
+        <ul>
+          <li><input type='checkbox' value='1' name='vopt[]' id='opt1' /> Lettere Maiuscole</li>
+          <li><input type='checkbox' value='2' name='vopt[]' id='opt2' /> Lettere Minuscole</li>
+      </div>
+      <div class='opt'>
+        <ul>
+          <li><input type='checkbox' value='3' name='vopt[]' id='opt3' /> Caratteri Numerici</li>
+          <li><input type='checkbox' value='4' name='vopt[]' id='opt4' /> Simboli</li>
+      </div>
+      <br class='clear' />
+    </div>
+    <div id='genera'>
+      <a href='javascript:;' onclick='gen()' title='Genera!'>Genera!</a>
+    </div>
+  </div>
+  <div id='appfoot'>
+    <strong>Senza mai arrendersi!</strong> &nbsp;&copy; 2012 - 2013 A35G (<a href='http://creativecommons.org/licenses/by-nc-sa/3.0/it/deed.it'>BY-NC-SA</a>)
+  </div>
+</body>
+</html>
