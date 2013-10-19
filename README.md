@@ -17,7 +17,7 @@ Create indipendent localization and fixed little bugs
 * vers. 0.1 - *June/July 2012*
 
 Currently, the items are fixed and localized in *Italian*; the next update will include integration into the code, to make independent localization.  
-The width of password, currently, is fixed at 12 character.
+The length of password, currently, is fixed at 12 character.
 
 ### More Info
 
