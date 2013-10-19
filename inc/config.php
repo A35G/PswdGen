@@ -13,6 +13,12 @@
 
   /** Default lang of script **/
   define('default_lang','en');
+  
+  /** Define default enabled values **/
+  define('upp_chr', true);
+  define('low_chr', true);
+  define('num_chr', false);
+  define('sym_chr', false);
 
   /** Please, don't edit **/
 
@@ -29,7 +35,11 @@
   $pass = new PswdGen;
   
   $base = Array (
-    'script_copy' => $pass->scriptCopy()  
+    'script_copy' => $pass->scriptCopy(),
+    'upp_abl' => $pass->checkSel(upp_chr),
+    'low_abl' => $pass->checkSel(low_chr),
+    'num_abl' => $pass->checkSel(num_chr),
+    'sym_abl' => $pass->checkSel(sym_chr)
   );
   
   $lng = $pass->searchLang();

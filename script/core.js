@@ -48,9 +48,9 @@ function gen() {
 
 $(document).ready(function() {
 
-  for ( var i = 0; i < chkb.length; i++ ) {
+  /*for ( var i = 0; i < chkb.length; i++ ) {
     $("#" + chkb[i] + "").attr ( "checked", "checked" );
-  }
+  }*/
 
   $.ajax({
     type: "GET",

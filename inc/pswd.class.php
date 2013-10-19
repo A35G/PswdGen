@@ -83,17 +83,18 @@
       return $lang;
       
     }
-
-    function parse_lang($text_l, $_LANG) {
+    
+    private function ablCamp($args) {
+    
+      $scheck = ($args) ? " checked='checked'" : "";
       
-      if ( array_key_exists ( $text_l, $_LANG ) ) {
-        return $this->textpl = str_replace ( $text_l, $_LANG[$text_l], $text_l );
-      }
-  
+      return $scheck;
+    
     }
 
     function scriptCopy() { return $this->getCopy(); }
     function searchLang() { return $this->checkLang(); }
+    function checkSel($icamp) { return $this->ablCamp($icamp); }
   	
   	function getErrorTemp($t_err) { return $t_err; }
 
