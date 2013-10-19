@@ -16,11 +16,12 @@ Create indipendent localization and fixed little bugs
 
 * vers. 0.1 - *June/July 2012*
 
-Currently, the items are fixed and localized in *Italian*; the next update will include integration into the code, to make independent localization.
+Currently, the items are fixed and localized in *Italian*; the next update will include integration into the code, to make independent localization.  
+The width of password, currently, is fixed at 12 character.
 
 ### More Info
 
-I have wanted to share with all this script, born for personal use, because it might be useful to someone, or simply could be improved. 
+I have wanted to share with all this script, born for personal use, because it might be useful to someone, or simply could be improved.  
 Any advice and/or suggestion is welcome.
 
 *Developed by Gianluigi "__A35G__"*
