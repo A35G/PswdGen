@@ -12,10 +12,12 @@ PHP Password Generator - Changelog
 ----------------------------------
 
 * vers. 0.1.11 - *Oct 2013* - __Testing period__
-* Create indipendent localization and fixed little bugs
+
+Create indipendent localization and fixed little bugs
 
 * vers. 0.1 - *June/July 2012*
-* Currently, the items are fixed and localized in *Italian*; the next update will include integration into the code, to make independent localization.
+
+Currently, the items are fixed and localized in *Italian*; the next update will include integration into the code, to make independent localization.
 
 More Info
 ---------
