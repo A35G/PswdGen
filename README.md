@@ -8,8 +8,7 @@ Codename *PassGen*, is a simple PHP script that allows you to generate passwords
 * **Numeric characters**
 * **Symbols**
 
-PHP Password Generator - Changelog
-----------------------------------
+### PHP Password Generator - Changelog
 
 * vers. 0.1.11 - *Oct 2013* - __Testing period__
 
@@ -19,10 +18,9 @@ Create indipendent localization and fixed little bugs
 
 Currently, the items are fixed and localized in *Italian*; the next update will include integration into the code, to make independent localization.
 
-More Info
----------
+### More Info
 
-I have wanted to share with all this script, born for personal use, because it might be useful to someone, or simply could be improved.
+I have wanted to share with all this script, born for personal use, because it might be useful to someone, or simply could be improved. 
 Any advice and/or suggestion is welcome.
 
 *Developed by Gianluigi "__A35G__"*
