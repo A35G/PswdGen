@@ -33,7 +33,9 @@
 
       	}
 
-    	} else { die($this->getErrorTemp("Error during replace the tags!")); }
+    	} else {
+        die($this->getErrorTemp("Error during replace the tags!"));
+      }
   	
   	}
 
@@ -53,8 +55,10 @@
       $scr_auth = $this->author;
       $act_year = date('Y');
 
-      if(intval($data_pub) == intval($act_year)) {$copyd = intval($data_pub);}
-      elseif(intval($data_pub) < intval($act_year)) {$copyd = intval($data_pub)." - ".intval($act_year);}
+      if(intval($data_pub) == intval($act_year))
+        $copyd = intval($data_pub);
+      elseif(intval($data_pub) < intval($act_year))
+        $copyd = intval($data_pub)." - ".intval($act_year);
 
       return $copyd."&nbsp;".$scr_auth;
     
@@ -63,17 +67,20 @@
     private function checkLang() {
       $langs = array();
       if (isset($_SERVER['HTTP_ACCEPT_LANGUAGE'])) {
-        preg_match_all('/([a-z]{1,8}(-[a-z]{1,8})?)\s*(;\s*q\s*=\s*(1|0\.[0-9]+))?/i', $_SERVER['HTTP_ACCEPT_LANGUAGE'], $lang_parse);
+        preg_match_all('/([a-z]{1,8}(-[a-z]{1,8})?)\s*(;\s*q\s*=\s*(1|0\.[0-9]+))?/i',
+         $_SERVER['HTTP_ACCEPT_LANGUAGE'], $lang_parse);
         if (count($lang_parse[1])) {
           $langs = array_combine($lang_parse[1], $lang_parse[4]);
           foreach ($langs as $lang => $value) {
-            if (empty($value)) $langs[$lang] = 1;
+            if (empty($value))
+              $langs[$lang] = 1;
           }
           arsort($langs, SORT_NUMERIC);
         }
       }
       
-      foreach ($langs as $lang => $value) { break; }
+      foreach ($langs as $lang => $value)
+        break;
       
       if (stristr($lang,"-")) {
         $tmp = explode("-",$lang);
@@ -92,10 +99,20 @@
     
     }
 
-    function scriptCopy() { return $this->getCopy(); }
-    function searchLang() { return $this->checkLang(); }
-    function checkSel($icamp) { return $this->ablCamp($icamp); }
+    function scriptCopy() {
+      return $this->getCopy();
+    }
+
+    function searchLang() {
+      return $this->checkLang();
+    }
+    
+    function checkSel($icamp) {
+      return $this->ablCamp($icamp);
+    }
   	
-  	function getErrorTemp($t_err) { return $t_err; }
+  	function getErrorTemp($t_err) {
+      return $t_err;
+    }
 
   }
