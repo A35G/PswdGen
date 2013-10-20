@@ -3,17 +3,24 @@ header('Content-type: text/html; charset=utf-8');
 
   function getPth($sngp='') {
 
-    if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN') { $fin = "\\"; }
-    else { $fin = "/"; }
+    if (strtoupper(substr(PHP_OS, 0, 3)) === 'WIN')
+      $fin = "\\";
+    else
+      $fin = "/";
 
     if (!isset($sngp) || empty($sngp)) {
   
       $len_s = strlen( __DIR__ );
       $num_p = strrpos( __DIR__, $fin);
-      if ($len_s != $num_p) { $pathy = __DIR__.$fin; }
-      else { $pathy = __DIR__; }
+
+      if ($len_s != $num_p)
+        $pathy = __DIR__.$fin;
+      else
+        $pathy = __DIR__;
     	
-    } else { $pathy = $fin; }
+    } else {
+      $pathy = $fin;
+    }
 
     return $pathy;
 
