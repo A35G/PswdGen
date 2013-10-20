@@ -17,7 +17,7 @@
   /** Define default enabled values **/
   define('upp_chr', true);
   define('low_chr', true);
-  define('num_chr', false);
+  define('num_chr', true);
   define('sym_chr', false);
 
   /** Please, don't edit **/
@@ -45,9 +45,12 @@
   $lng = $pass->searchLang();
   
   if ($lng) {
-    if (@file_exists($path_page.'locale'.$slg.$lng.'.php')) {include($path_page.'locale'.$slg.$lng.'.php');}
-    else {
-      if(defined(default_lang)) {include($path_page.'locale'.$slg.default_lang.'.php');}
-      else {include($path_page.'locale'.$slg.'en.php');}
+    if (@file_exists($path_page.'locale'.$slg.$lng.'.php')) {
+      include($path_page.'locale'.$slg.$lng.'.php');
+    } else {
+      if(defined(default_lang))
+        include($path_page.'locale'.$slg.default_lang.'.php');
+      else
+        include($path_page.'locale'.$slg.'en.php');
     }
   }
