@@ -24,8 +24,24 @@
 		return $passWord;
 
   }
+  
+  if(isset($_GET['dim_p']) && !empty($_GET['dim_p']) && is_numeric($_GET['dim_p'])) {
 
-  if (isset($_GET['tip_r']) && !empty($_GET['tip_r'])) {
+    if(isset($_GET['tip_r']) && !empty($_GET['tip_r'])) {
+
+      /**
+       *  We are working for You :D
+       **/
+
+    } else {
+      echo randPass();
+    }  
+  
+  } else {
+    echo randPass();
+  }
+
+  /*if(isset($_GET['tip_r']) && !empty($_GET['tip_r'])) {
 
     list($tips, $num) = explode("_", $_GET['tip_r']);
 
@@ -49,4 +65,4 @@
 
   } else {
     echo randPass();
-  }
+  }*/
