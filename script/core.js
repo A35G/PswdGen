@@ -57,11 +57,14 @@ function checkOpt() {
 
 }
 
-function gen(dim_pswd) {
+function gen() {
 
   var datastr = checkOpt();
-  
-  var length_pswd = dim_pswd;
+
+  if($('#psdim').length)
+    var length_pswd = $('#psdim').val();
+  else
+    var length_pswd = '';
 
   if(!empty(length_pswd)) {
     if(isNum(length_pswd))
