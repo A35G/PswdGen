@@ -39,7 +39,8 @@
     'upp_abl' => $pass->checkSel(upp_chr),
     'low_abl' => $pass->checkSel(low_chr),
     'num_abl' => $pass->checkSel(num_chr),
-    'sym_abl' => $pass->checkSel(sym_chr)
+    'sym_abl' => $pass->checkSel(sym_chr),
+    'len_phr' => default_length
   );
   
   $lng = $pass->searchLang();
