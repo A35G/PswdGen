@@ -7,10 +7,14 @@
  *  http://www.hackworld.it/     
 */
 
-function empty( mixed_var ) {
+function empty(mixed_var) {
   return ( mixed_var === '' || mixed_var === 0 || mixed_var === '0' || 
   mixed_var === null || mixed_var === false || mixed_var === undefined || 
   mixed_var.length === 0 );
+}
+
+function isNum(num) {
+  return (!isNaN(num) && !isNaN(parseFloat(num)));
 }
 
 jQuery.ajaxSetup({
@@ -53,16 +57,27 @@ function checkOpt() {
 
 }
 
-function gen() {
+function gen(dim_pswd) {
 
   var datastr = checkOpt();
+  
+  var length_pswd = dim_pswd;
+
+  if(!empty(length_pswd)) {
+    if(isNum(length_pswd))
+      var inum = parseInt(length_pswd);
+    else
+      var inum = ''; 
+  } else {
+    var inum = '';
+  }
   
   if (!empty(datastr)) {
 
     $.ajax({
       type: 'GET',
       url: 'pages/get.php',
-      data: {tip_r: datastr},
+      data: {tip_r: datastr, dim_p: inum},
       cache: false,
       success: function(result){
         if (!empty(result))
