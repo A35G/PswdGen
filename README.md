@@ -25,3 +25,6 @@ I have wanted to share with all this script, born for personal use, because it m
 Any advice and/or suggestion is welcome.
 
 *Developed by Gianluigi "__A35G__"*
+
+[![status](https://sourcegraph.com/api/repos/github.com/A35G/PswdGen/badges/status.png)](https://sourcegraph.com/github.com/A35G/PswdGen)
+[![Total views](https://sourcegraph.com/api/repos/github.com/A35G/PswdGen/counters/views.png)](https://sourcegraph.com/github.com/A35G/PswdGen)
